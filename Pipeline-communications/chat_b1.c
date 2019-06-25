@@ -2,6 +2,7 @@
 int main()
 {
 	int flag=0;
+	
 	//消息队列
 	int msg_id=msgget(1000,0600|IPC_CREAT);
 	struct msgbuf msg;
