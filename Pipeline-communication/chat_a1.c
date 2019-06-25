@@ -7,6 +7,7 @@ int main()
 	printf("shmid=%d\n",shmid);
 	struct protocol *p;
 	p=shmat(shmid,NULL,0);
+
 	//信号量
 	int semid=semget(1000,2,0600|IPC_CREAT);
 	semctl(semid,0,SETVAL,1);
