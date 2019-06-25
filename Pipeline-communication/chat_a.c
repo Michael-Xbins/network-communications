@@ -1,4 +1,5 @@
 #include "func.h"
+
 void sigfunc(int signum)
 {
 	printf("%d\n",signum);
@@ -8,6 +9,7 @@ int main(int argc,char**argv)
 {
 	check_args(argc,3);
 	int fdr,fdw;
+
 	//管道
 	fdr=open(argv[1],O_RDONLY);
 	if(-1==fdr)
