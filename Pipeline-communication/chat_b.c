@@ -43,7 +43,6 @@ int main(int argc,char**argv)
 				msg.mtype=1;
 				strcpy(msg.mtext,buf);
 				msgsnd(msg_id,&msg,strlen(msg.mtext),0);
-				//printf("%s\n",buf);
 			}
 			if(FD_ISSET(0,&rdset))
 			{
